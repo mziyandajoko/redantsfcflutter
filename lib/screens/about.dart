@@ -5,6 +5,20 @@ class AboutPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text('About'),);
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('REDANT\'S FC'),
+      ),
+      body: const Center(
+        child: Text('Welcome to RedAnt\'sfc! About page'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: const Icon(Icons.add),
+      ),
+      
+    );
   }
 }
