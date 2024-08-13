@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../Widgets/drawer.dart';
+
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
 
@@ -9,6 +11,7 @@ class AboutPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('REDANT\'S FC'),
       ),
+      drawer: const PageDrawer(),
       body: const Center(
         child: Text('Welcome to RedAnt\'sfc! About page'),
       ),

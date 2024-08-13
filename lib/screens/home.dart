@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:redantsfc/Widgets/drawer.dart';
 import 'package:redantsfc/screens/about.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,6 +11,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('REDANT\'S FC'),
       ),
+      drawer: const PageDrawer(),
       body: const Center(
         child: Text('Welcome to the Home of RedAnt\'sfc!'),
       ),
